@@ -7,7 +7,7 @@ namespace Group4
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            Console.Write("Start");
+            Console.Write("Start 1");
         }
     }
 }
