@@ -7,6 +7,8 @@ namespace Group4
         static void Main(string[] args)
         // enbart en test för att illustrera en potentiell design.
         // vet ej ifall detta fungerar error message "Try the new cross-platform PowerShell"
+        // case in case ser ej ut att fungera, If else får användas istället?
+
 
         {
         bool finished = false;
@@ -34,8 +36,6 @@ namespace Group4
                     case 3:
                     Console.WriteLine("U / I = R");
                     break;
-                    default:
-                    Console.WriteLine("error");
                 }
                 case 2:
                 Console.WriteLine("Grader");
@@ -50,18 +50,14 @@ namespace Group4
                     case 3:
                     Console.WriteLine("Fahrenheit");
                     break;
-                    default:
-                    Console.WriteLine("error");
                 }
                 case 3:
                 Console.WriteLine("Times");
                 int opinionTime = int.Parse(Console.ReadLine());
-                switch(opinionGrad){
+                switch(opinionTime){
                     case 1:
                     case 2:
                     case 3:
-                    default:
-                    Console.WriteLine("error");
                 }
                 case 4:
                 Console.WriteLine("Volym eller area?");
