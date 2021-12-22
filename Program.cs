@@ -14,10 +14,10 @@ namespace Group4
         do
         {
             Console.WriteLine("Start");
-            Console.WriteLine("1 = Ohms Lag");
-            Console.WriteLine("2 = Grader");
-            Console.WriteLine("3 = Time");
-            Console.WriteLine("4 = Area eller volym");
+            Console.WriteLine("A = Ohms Lag");
+            Console.WriteLine("B = Grader");
+            Console.WriteLine("C = Time");
+            Console.WriteLine("D = Area eller volym");
             Console.Write(" Choose: ");
                 char x = char.Parse(Console.ReadLine());
                 if (x == 'A')
