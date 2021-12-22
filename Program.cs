@@ -9,8 +9,7 @@ namespace Group4
         // vet ej ifall detta fungerar error message "Try the new cross-platform PowerShell"
         // case in case ser ej ut att fungera, If else får användas istället?
 
-
-        {
+{
         bool finished = false;
         do
         {
@@ -19,83 +18,47 @@ namespace Group4
             Console.WriteLine("2 = Grader");
             Console.WriteLine("3 = Time");
             Console.WriteLine("4 = Area eller volym");
-            Console.Write("| Choose: ");
-            var opinion = (Console.ReadLine());
-                if (opinion == "1")
+            Console.Write(" Choose: ");
+                char x = char.Parse(Console.ReadLine());
+                if (x == 'A')
                 {
-                  
-                        Console.WriteLine("Ohms Lag");
-                        var opinionOhm = (Console.ReadLine());
+                    Console.WriteLine("Ohms Lag");
+                    int opinion = int.Parse(Console.ReadLine());
+                    switch(opinion)
                     {
+                        case 1:
+                        Console.WriteLine("Spänning");
+                        break;
 
+                        case 2:
+                        Console.WriteLine("Ström");
+                        break;
 
-                        Console.WriteLine("R * I = U");
-
-
-                        Console.WriteLine("U / R = I");
-
-
-                        Console.WriteLine("U / I = R");
+                        case 3:
+                        Console.WriteLine("Resistans");
+                        break;
                     }
-                      
-                        
-                
-               
-                Console.WriteLine("Grader");
-                var opinionGrad = (Console.ReadLine());
-              
-                    Console.WriteLine("Celius");
-                 
-                    Console.WriteLine("Kelvin");
-                  
-                    Console.WriteLine("Fahrenheit");
-                  
-                }
-                
-                Console.WriteLine("Times");
-                var opinionTime = (Console.ReadLine());
-               
-                
-               
-                Console.WriteLine("Volym eller area?");
-                var opinionVolArea = (Console.ReadLine());
-              
-                    Console.WriteLine("Volym");
-                    var opinionVolym = (Console.ReadLine()); 
-                  
-                        Console.WriteLine("Rectangle Volym");
-                       
-                        Console.WriteLine("Triangle Volym");
-                      
-                        Console.WriteLine("Cricle Volym");
-                      
-                        Console.WriteLine("Cube Volym");
-                     
-                        Console.WriteLine("error");
-                    
-                 
-                    Console.WriteLine("Area");
-                    var opinionArea = (Console.ReadLine());
-                { 
-                      
-                        Console.WriteLine("Rectangle Volym");
-                       
-                        Console.WriteLine("Triangle Area");
-                       
-                        Console.WriteLine("Cricle Area");
-                       
-                        Console.WriteLine("Cube Area");
-                       
-                        Console.WriteLine("error");
-                    }
-                
                 }
 
 
-            }
+
+                if (x == 'B')
+                {
+                    Console.WriteLine("Grader");
+                }
+                if (x == 'C')
+                {
+                    Console.WriteLine("Time");
+                }
+                if (x == 'D')
+                {
+                    Console.WriteLine("Area eller volym");
+                }
+
+
             Console.Write("- Restart (Y/N) answer: ");
-            char x = char.Parse(Console.ReadLine());
-            if (x =='y' && x=='Y')
+            char b = char.Parse(Console.ReadLine());
+            if (b =='y')
             {
                 finished = false;
             }
