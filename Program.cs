@@ -9,8 +9,7 @@ namespace Group4
         // vet ej ifall detta fungerar error message "Try the new cross-platform PowerShell"
         // case in case ser ej ut att fungera, If else får användas istället?
 
-
-        {
+{
         bool finished = false;
         do
         {
@@ -19,96 +18,47 @@ namespace Group4
             Console.WriteLine("2 = Grader");
             Console.WriteLine("3 = Time");
             Console.WriteLine("4 = Area eller volym");
-            Console.Write("| Choose: ");
-            int opinion = int.Parse(Console.ReadLine());
-            switch(opinion)
-            {
-                case 1:
-                Console.WriteLine("Ohms Lag");
-                int opinionOhm = int.Parse(Console.ReadLine());
-                switch(opinionOhm){
-                    case 1:
-                    Console.WriteLine("R * I = U");
-                    break;
-                    case 2:
-                    Console.WriteLine("U / R = I");
-                    break;
-                    case 3:
-                    Console.WriteLine("U / I = R");
-                    break;
-                }
-                case 2:
-                Console.WriteLine("Grader");
-                int opinionGrad = int.Parse(Console.ReadLine());
-                switch(opinionGrad){
-                    case 1:
-                    Console.WriteLine("Celius");
-                    break;
-                    case 2:
-                    Console.WriteLine("Kelvin");
-                    break;
-                    case 3:
-                    Console.WriteLine("Fahrenheit");
-                    break;
-                }
-                case 3:
-                Console.WriteLine("Times");
-                int opinionTime = int.Parse(Console.ReadLine());
-                switch(opinionTime){
-                    case 1:
-                    case 2:
-                    case 3:
-                }
-                case 4:
-                Console.WriteLine("Volym eller area?");
-                int opinionVolArea = int.Parse(Console.ReadLine());
-                switch(opinionVolArea){
-                    case 1:
-                    Console.WriteLine("Volym");
-                    int opinionVolym = int.Parse(Console.ReadLine());
-                    switch(opinionVolym){
+            Console.Write(" Choose: ");
+                char x = char.Parse(Console.ReadLine());
+                if (x == 'A')
+                {
+                    Console.WriteLine("Ohms Lag");
+                    int opinion = int.Parse(Console.ReadLine());
+                    switch(opinion)
+                    {
                         case 1:
-                        Console.WriteLine("Rectangle Volym");
+                        Console.WriteLine("Spänning");
                         break;
+
                         case 2:
-                        Console.WriteLine("Triangle Volym");
+                        Console.WriteLine("Ström");
                         break;
+
                         case 3:
-                        Console.WriteLine("Cricle Volym");
+                        Console.WriteLine("Resistans");
                         break;
-                        case 4:
-                        Console.WriteLine("Cube Volym");
-                        break;
-                        default:
-                        Console.WriteLine("error");
                     }
-                    case 2:
-                    Console.WriteLine("Area");
-                    int opinionArea = int.Parse(Console.ReadLine());
-                        switch(opinionArea){
-                        case 1:
-                        Console.WriteLine("Rectangle Volym");
-                        break;
-                        case 2:
-                        Console.WriteLine("Triangle Area");
-                        break;
-                        case 3:
-                        Console.WriteLine("Cricle Area");
-                        break;
-                        case 4:
-                        Console.WriteLine("Cube Area");
-                        break;
-                        default:
-                        Console.WriteLine("error");
-                    }
-                    default:
                 }
 
 
-            }
+
+                if (x == 'B')
+                {
+                    Console.WriteLine("Grader");
+                }
+                if (x == 'C')
+                {
+                    Console.WriteLine("Time");
+                }
+                if (x == 'D')
+                {
+                    Console.WriteLine("Area eller volym");
+                }
+
+
             Console.Write("- Restart (Y/N) answer: ");
-            char x = char.Parse(Console.ReadLine());
-            if (x =='y' && x=='Y')
+            char b = char.Parse(Console.ReadLine());
+            if (b =='y')
             {
                 finished = false;
             }
