@@ -30,7 +30,14 @@ namespace Group4
                     switch(opinion)
                     {
                         case 1:
+                        int n1, n2, result;
                         Console.WriteLine("Spänning");
+                        Console.WriteLine("Ange: Strömmen");
+                        n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ange: Resistans");
+                        n2 = Convert.ToInt32(Console.ReadLine());
+                        result = n1 * n2;
+                        Console.WriteLine(result);
                         break;
 
                         case 2:
