@@ -23,6 +23,9 @@ namespace Group4
                 if (x == 'A')
                 {
                     Console.WriteLine("Ohms Lag");
+                    Console.WriteLine("1 = Spänning");
+                    Console.WriteLine("2 = Ström");
+                    Console.WriteLine("3 = Resistans");
                     int opinion = int.Parse(Console.ReadLine());
                     switch(opinion)
                     {
