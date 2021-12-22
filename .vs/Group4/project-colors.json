@@ -5,7 +5,17 @@
       "ProjectGuid": "e004c28d-9ac1-420c-8423-f5ef899ddeaf",
       "DisplayName": "Group4",
       "ColorIndex": 0
+    },
+    "64e2d6fb-87e6-48e0-a344-e1858e109fb4": {
+      "ProjectGuid": "64e2d6fb-87e6-48e0-a344-e1858e109fb4",
+      "DisplayName": "Group4",
+      "ColorIndex": 1
+    },
+    "ae652af7-e735-4b3a-9855-35cf061e01a0": {
+      "ProjectGuid": "ae652af7-e735-4b3a-9855-35cf061e01a0",
+      "DisplayName": "Group4",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }
