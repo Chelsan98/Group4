@@ -13,12 +13,14 @@ namespace Group4
         bool finished = false;
         do
         {
-            Console.WriteLine("Start");
-            Console.WriteLine("A = Ohms Lag");
-            Console.WriteLine("B = Grader");
-            Console.WriteLine("C = Time");
-            Console.WriteLine("D = Area eller volym");
-            Console.Write(" Choose: ");
+            Console.WriteLine("__________________________________________________________________");
+            Console.WriteLine("|Start                                                           |");                           
+            Console.WriteLine("|A = Ohms Lag                                                    |");
+            Console.WriteLine("|B = Grader                                                      |");
+            Console.WriteLine("|C = Time                                                        |");
+            Console.WriteLine("|D = Area eller volym                                            |");
+            Console.WriteLine("|________________________________________________________________|");
+            Console.Write("| Choose:  ");
                 char x = char.Parse(Console.ReadLine());
                 if (x == 'A')
                 {
