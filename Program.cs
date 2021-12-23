@@ -17,7 +17,7 @@ namespace Group4
             Console.WriteLine("|Start                                                           |");                           
             Console.WriteLine("|A = Ohms Lag                                                    |");
             Console.WriteLine("|B = Grader                                                      |");
-            Console.WriteLine("|C = Time                                                        |");
+            Console.WriteLine("|C = Hastighet                                                   |");
             Console.WriteLine("|D = Area eller volym                                            |");
             Console.WriteLine("|________________________________________________________________|");
             Console.Write("| Choose:  ");
@@ -67,17 +67,16 @@ namespace Group4
                         break;
                     }
                 }
-
-
-
                 if (x == 'B')
                 {
                     Console.WriteLine("Grader");
                 }
+
                 if (x == 'C')
                 {
-                    Console.WriteLine("Time");
+                    Console.WriteLine("Hastighet");
                 }
+
                 if (x == 'D')
                 {
                     Console.WriteLine("Area eller volym");
