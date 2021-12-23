@@ -55,7 +55,7 @@ namespace Group4
                         resultStröm = n3 / n4;
                         Console.WriteLine("{0} Är Strömmen. ", resultStröm);
                         Console.WriteLine("|__________________________________________________________________");
-                            break;
+                        break;
 
                         case 3:
                         double n5, n6, resultRes; 
@@ -78,42 +78,30 @@ namespace Group4
 
                 if (x == 'C')
                 {
-                    Console.WriteLine("| Hastighet uträknare.                                             |");
-                    Console.WriteLine("|__________________________________________________________________|");
-                    Console.WriteLine("| 1 = Tid                                                          |");
-                    Console.WriteLine("| 2 = Distans                                                      |");
-                    Console.WriteLine("| 3 = Medel Hastighet                                              |");
-                    Console.WriteLine("|__________________________________________________________________|");
+                    Console.WriteLine("Hastighet");
+                    Console.WriteLine("1 = ");
+                    Console.WriteLine("2 = ");
+                    Console.WriteLine("3 = ");
                     int opinionSVT = int.Parse(Console.ReadLine());
                     switch (opinionSVT)
                     {
                         case 1:
-                        double m1, m2, result1;
+                        double n1, n2, result;
+                        Console.WriteLine("Räkna ut sträckan");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.WriteLine("Ange: Hastighet: ");
+                        n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ange: Tiden: ");
+                        n2 = Convert.ToInt32(Console.ReadLine());
+                        result = n1 * n2;
+                        Console.WriteLine("{0} Är sträckan. ", result);
+                        Console.WriteLine("|__________________________________________________________________");
                         break;
 
                         case 2:
-                        double m3, m4, result2;
-                        Console.WriteLine("| Medel Hastighet.");
-                        Console.WriteLine("|__________________________________________________________________");
-                        Console.Write("| Ange: Sträckan / Distansen: ");
-                        m3 = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("| Ange: Tiden det har tagit: ");
-                        m4 = Convert.ToInt32(Console.ReadLine());
-                        result2 = m5 / m6;
                         break;
                         
                         case 3:
-                        // Hastighet = V. S / T = V 
-                        double m5, m6, result3;
-                        Console.WriteLine("| Medel Hastighet.");
-                        Console.WriteLine("|__________________________________________________________________");
-                        Console.Write("| Ange: Sträckan / Distansen: ");
-                        m5 = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("| Ange: Tiden det har tagit: ");
-                        m6 = Convert.ToInt32(Console.ReadLine());
-                        result3 = m5 / m6;
-                        Console.WriteLine("| {0} Medel Hastighet. ",result3);
-                        Console.WriteLine("|__________________________________________________________________");
                         break;
                     }
                 }
