@@ -68,6 +68,21 @@ namespace Group4
                 if (x == 'C')
                 {
                     Console.WriteLine("Hastighet");
+                    Console.WriteLine("1 = ");
+                    Console.WriteLine("2 = ");
+                    Console.WriteLine("3 = ");
+                    int opinionSVT = int.Parse(Console.ReadLine());
+                    switch (opinionSVT)
+                    {
+                        case 1:
+                        break;
+
+                        case 2:
+                        break;
+                        
+                        case 3:
+                        break;
+                    }
                 }
 
                 if (x == 'D')
