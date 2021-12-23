@@ -44,6 +44,12 @@ namespace Group4
 
                         case 2:
                         Console.WriteLine("Ström");
+                        Console.Write("Ange: spänningen");
+                        n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Ange: Resistans");
+                        n2 = Convert.ToInt32(Console.ReadLine());
+                        result = n1 / n2;
+                        Console.WriteLine(result);
                         break;
 
                         case 3:
