@@ -96,6 +96,15 @@ namespace Group4
                         break;
 
                         case 2:
+                        Console.WriteLine("Räkna ut Hastigheten");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.WriteLine("Ange: Sträckan: ");
+                        n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ange: Tiden: ");
+                        n2 = Convert.ToInt32(Console.ReadLine());
+                        result = n1 / n2;
+                        Console.WriteLine("{0} Är Hastigheten. ", result);
+                        Console.WriteLine("|__________________________________________________________________");
                         break;
                         
                         case 3:
