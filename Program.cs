@@ -99,6 +99,16 @@ namespace Group4
                         break;
                         
                         case 3:
+                        double n5, n6, result3;
+                        Console.WriteLine("| Räkna ut Tiden");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.Write("| Ange: Sträckan / Distansen: ");
+                        n5 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("| Ange: Medel Hastigheten: ");
+                        n6 = Convert.ToInt32(Console.ReadLine());
+                        result3 = n5 / n6 / 60;
+                        Console.WriteLine("| {0} Mintuer. ", result3);
+                        Console.WriteLine("|__________________________________________________________________");
                         break;
                     }
                 }
