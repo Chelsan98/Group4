@@ -74,20 +74,25 @@ namespace Group4
 
                 if (x == 'C')
                 {
-                    Console.WriteLine("Hastighet");
-                    Console.WriteLine("1 = ");
-                    Console.WriteLine("2 = ");
-                    Console.WriteLine("3 = ");
+                    Console.WriteLine("| Hastighet uträknare.                                             |");
+                    Console.WriteLine("|__________________________________________________________________|");
+                    Console.WriteLine("| 1 = Tid                                                          |");
+                    Console.WriteLine("| 2 = Distans                                                      |");
+                    Console.WriteLine("| 3 = Medel Hastighet                                              |");
+                    Console.WriteLine("|__________________________________________________________________|");
                     int opinionSVT = int.Parse(Console.ReadLine());
                     switch (opinionSVT)
                     {
                         case 1:
+                        double m1, m2, result1;
                         break;
 
                         case 2:
+                        double m3, m4, result2;
                         break;
                         
                         case 3:
+                        double m5, m6, result3;
                         break;
                     }
                 }
