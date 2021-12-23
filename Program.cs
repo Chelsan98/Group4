@@ -96,7 +96,17 @@ namespace Group4
                         break;
                         
                         case 3:
+                        // Hastighet = V. S / T = V 
                         double m5, m6, result3;
+                        Console.WriteLine("| Medel Hastighet.");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.Write("| Ange: Sträckan / Distansen: ");
+                        m5 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("| Ange: Tiden det har tagit: ");
+                        m6 = Convert.ToInt32(Console.ReadLine());
+                        result3 = m5 / m6;
+                        Console.WriteLine("| {0} Medel Hastighet. ",result3);
+                        Console.WriteLine("|__________________________________________________________________");
                         break;
                     }
                 }
