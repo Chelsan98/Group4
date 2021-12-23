@@ -55,7 +55,7 @@ namespace Group4
                         resultStröm = n3 / n4;
                         Console.WriteLine("{0} Är Strömmen. ", resultStröm);
                         Console.WriteLine("|__________________________________________________________________");
-                            break;
+                        break;
 
                         case 3:
                         double n5, n6, resultRes; 
@@ -86,6 +86,16 @@ namespace Group4
                     switch (opinionSVT)
                     {
                         case 1:
+                        double n1, n2, result;
+                        Console.WriteLine("Räkna ut sträckan");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.WriteLine("Ange: Hastighet: ");
+                        n1 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ange: Tiden: ");
+                        n2 = Convert.ToInt32(Console.ReadLine());
+                        result = n1 * n2;
+                        Console.WriteLine("{0} Är sträckan. ", result);
+                        Console.WriteLine("|__________________________________________________________________");
                         break;
 
                         case 2:
