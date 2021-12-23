@@ -33,25 +33,29 @@ namespace Group4
                     {
                         case 1:
                         double n1, n2, result;
-                        Console.WriteLine("Spänning");
-                        Console.WriteLine("Ange: Strömmen");
+                        Console.WriteLine("Spänning uträknare");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.WriteLine("Ange: Strömmen: ");
                         n1 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Ange: Resistans");
+                        Console.WriteLine("Ange: Resistans: ");
                         n2 = Convert.ToInt32(Console.ReadLine());
                         result = n1 * n2;
-                        Console.WriteLine(result);
+                        Console.WriteLine("{0} Är spänningen. ",result);
+                        Console.WriteLine("|__________________________________________________________________");
                         break;
 
                         case 2:
                         double resultStröm, n3, n4;
-                        Console.WriteLine("Ström");
-                        Console.Write("Ange: spänningen");
+                        Console.WriteLine("Ström uträknare");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.Write("Ange: spänningen: ");
                         n3 = Convert.ToInt32(Console.ReadLine());
-                        Console.Write("Ange: Resistans");
+                        Console.Write("Ange: Resistans: ");
                         n4 = Convert.ToInt32(Console.ReadLine());
                         resultStröm = n3 / n4;
-                        Console.WriteLine(resultStröm);
-                        break;
+                        Console.WriteLine("{0} Är Strömmen. ", resultStröm);
+                        Console.WriteLine("|__________________________________________________________________");
+                            break;
 
                         case 3:
                         double n5, n6, resultRes; 
@@ -62,7 +66,7 @@ namespace Group4
                         Console.Write("| Ange: Strömmen: ");
                         n6 = Convert.ToInt32(Console.ReadLine());
                         resultRes = n5 / n6;
-                        Console.WriteLine("| {0} Är spänningen. ",resultRes);
+                        Console.WriteLine("| {0} Är Resistans. ",resultRes);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
                     }
