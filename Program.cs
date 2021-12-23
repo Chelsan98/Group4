@@ -93,6 +93,13 @@ namespace Group4
 
                         case 2:
                         double m3, m4, result2;
+                        Console.WriteLine("| Medel Hastighet.");
+                        Console.WriteLine("|__________________________________________________________________");
+                        Console.Write("| Ange: Sträckan / Distansen: ");
+                        m3 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("| Ange: Tiden det har tagit: ");
+                        m4 = Convert.ToInt32(Console.ReadLine());
+                        result2 = m5 / m6;
                         break;
                         
                         case 3:
