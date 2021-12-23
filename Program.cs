@@ -78,10 +78,12 @@ namespace Group4
 
                 if (x == 'C')
                 {
-                    Console.WriteLine("Hastighet");
-                    Console.WriteLine("1 = ");
-                    Console.WriteLine("2 = ");
-                    Console.WriteLine("3 = ");
+                    Console.WriteLine("___________________________________________________________________");
+                    Console.WriteLine("|----------------------------Hastighet-----------------------------|");
+                    Console.WriteLine("| 1 = Sträckan / Distans                                           |");
+                    Console.WriteLine("| 2 = Hastighet                                                    |");
+                    Console.WriteLine("| 3 = Tiden                                                        |");
+                    Console.WriteLine("|__________________________________________________________________|");
                     int opinionSVT = int.Parse(Console.ReadLine());
                     switch (opinionSVT)
                     {
