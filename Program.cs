@@ -47,7 +47,14 @@ namespace Group4
                         break;
 
                         case 3:
-                        Console.WriteLine("Resistans");
+                        int n5, n6, resultRes; 
+                        Console.WriteLine("Resistans uträknare.");
+                        Console.Write("Ange: Spänningen: ");
+                        n5 = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("Ange: Strömmen: ");
+                        n6 = Convert.ToInt32(Console.ReadLine());
+                        resultRes = n5 / n6;
+                        Console.WriteLine(resultRes);
                         break;
                     }
                 }
