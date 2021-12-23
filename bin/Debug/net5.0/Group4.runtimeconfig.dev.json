@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\GTSA - Infinity\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\GTSA - Infinity\\.nuget\\packages"
+      "C:\\Users\\anton\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\anton\\.nuget\\packages"
     ]
   }
 }
