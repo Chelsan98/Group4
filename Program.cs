@@ -4,12 +4,7 @@ namespace Group4
 {
     class Program
     {
-        static void Main(string[] args)
-        // enbart en test för att illustrera en potentiell design.
-        // vet ej ifall detta fungerar error message "Try the new cross-platform PowerShell"
-        // case in case ser ej ut att fungera, If else får användas istället?
-
-{
+        static void Main(string[] args){
         bool finished = false;
         do
         {
