@@ -115,7 +115,7 @@ namespace Group4
                         n5 = Convert.ToInt32(Console.ReadLine());
                         Console.Write("| Ange: Medel Hastigheten: ");
                         n6 = Convert.ToInt32(Console.ReadLine());
-                        result3 = n5 / n6 / 60;
+                        result3 = n5 / n6;
                         Console.WriteLine("| {0} Mintuer. ", result3);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
