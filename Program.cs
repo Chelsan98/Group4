@@ -69,11 +69,47 @@ namespace Group4
                         break;
                     }
                 }
+                // -----------------------------------------------------------------------------------------------
                 if (x == 'B')
                 {
-                    Console.WriteLine("Grader");
-                }
 
+                    Console.WriteLine(" ___________________________________________________________________");
+                    Console.WriteLine("| Grader");
+                    Console.WriteLine("| 1 Celius");
+                    Console.WriteLine("| 2 Fharen");
+                    Console.WriteLine("| 3 Kelvin");
+                    Console.WriteLine("|___________________________________________________________________");
+                    Console.Write("| Choose:  ");
+                    int opinionGrade = int.Parse(Console.ReadLine());
+                    switch (opinionGrade)
+                    {
+                        case 1:
+                        Console.WriteLine("| Celius");
+                        Console.Write("| Ange: Antal Celius: ");
+                        int celsius = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("| Kelvin = {0}", celsius + 273);
+                        Console.WriteLine("| Fahrenheit = {0}", celsius * 18 / 10 + 32);
+                        break;
+
+                        case 2:
+                        Console.WriteLine("| Fahrenheit");
+                        Console.Write("| Ange: Antal Fahrenheit: ");
+                        int fahren = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("| Kelvin = {0}", fahren - 32 * 5 / 9 + 273.15);
+                        Console.WriteLine("| Celius = {0}", fahren * 1.8 + 32);
+                        break;
+                        
+                        case 3:
+                        Console.WriteLine("| Klevin");
+                        Console.Write("| Ange: Antal Kelvin: ");
+                        int kelvin = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("| Celius = {0}", kelvin - 273.15);
+                        Console.WriteLine("| Fahrenheit = {0}", (kelvin - 273.15) * 1.8 + 32 );
+                        break;
+
+                    }
+                }
+                // -----------------------------------------------------------------------------------------------
                 if (x == 'C')
                 {
                     Console.WriteLine("___________________________________________________________________");
@@ -90,9 +126,9 @@ namespace Group4
                         double n1, n2, result;
                         Console.WriteLine("| Räkna ut sträckan");
                         Console.WriteLine("|__________________________________________________________________");
-                        Console.WriteLine("| Ange: Hastighet: ");
+                        Console.Write("| Ange: Hastighet: ");
                         n1 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("| Ange: Tiden: ");
+                        Console.Write("| Ange: Tiden: ");
                         n2 = Convert.ToInt32(Console.ReadLine());
                         result = n1 * n2;
                         Console.WriteLine("| {0} Är sträckan. ", result);
@@ -100,14 +136,15 @@ namespace Group4
                         break;
 
                         case 2:
+                        double n3, n4, result2;
                         Console.WriteLine("| Räkna ut Hastigheten");
                         Console.WriteLine("|__________________________________________________________________");
                         Console.Write("| Ange: Sträckan: ");
-                        n1 = Convert.ToInt32(Console.ReadLine());
+                        n3 = Convert.ToInt32(Console.ReadLine());
                         Console.Write("| Ange: Tiden: ");
-                        n2 = Convert.ToInt32(Console.ReadLine());
-                        result = n1 / n2;
-                        Console.WriteLine("| {0} Är Hastigheten. ", result);
+                        n4 = Convert.ToInt32(Console.ReadLine());
+                        result2 = n3 / n4;
+                        Console.WriteLine("| {0} Är Hastigheten. ", result2);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
                         
@@ -125,12 +162,28 @@ namespace Group4
                         break;
                     }
                 }
-
+                // -----------------------------------------------------------------------------------------------
                 if (x == 'D')
                 {
                     Console.WriteLine("Area eller volym");
-                }
+                    char k = char.Parse(Console.ReadLine());
+                    if (x == 'k'){
+                    int opinionArea = int.Parse(Console.ReadLine());
+                    switch (opinionArea){
 
+
+                    }
+                    } 
+
+                    if (x == 'v'){
+                    int opinionVolym = int.Parse(Console.ReadLine());
+                    switch (opinionVolym){
+
+                        
+                    }
+                    }
+                }
+                // -----------------------------------------------------------------------------------------------
 
             Console.Write("| Restart (Y/N) answer: ");
             char b = char.Parse(Console.ReadLine());
