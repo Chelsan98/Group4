@@ -8,47 +8,50 @@ namespace Group4
         bool finished = false;
         do
         {
-            Console.WriteLine("__________________________________________________________________");
-            Console.WriteLine("|Start                                                           |");                           
-            Console.WriteLine("|A = Ohms Lag                                                    |");
-            Console.WriteLine("|B = Grader                                                      |");
-            Console.WriteLine("|C = Hastighet                                                   |");
-            Console.WriteLine("|D = Area eller volym                                            |");
+            Console.WriteLine("_________________________________________________________________");
+            Console.WriteLine("|-------------------------------Start----------------------------|");                           
+            Console.WriteLine("| A = Ohms Lag                                                   |");
+            Console.WriteLine("| B = Grader                                                     |");
+            Console.WriteLine("| C = Hastighet                                                  |");
+            Console.WriteLine("| D = Area eller volym                                           |");
             Console.WriteLine("|________________________________________________________________|");
             Console.Write("| Choose:  ");
                 char x = char.Parse(Console.ReadLine());
                 if (x == 'A')
                 {
-                    Console.WriteLine("Ohms Lag");
-                    Console.WriteLine("1 = Spänning");
-                    Console.WriteLine("2 = Ström");
-                    Console.WriteLine("3 = Resistans");
+                    Console.WriteLine("__________________________________________________________________");
+                    Console.WriteLine("|--------------------------Ohms Lag Menu--------------------------|");
+                    Console.WriteLine("| 1 = Spänning                                                    |");
+                    Console.WriteLine("| 2 = Ström                                                       |");
+                    Console.WriteLine("| 3 = Resistans                                                   |");
+                    Console.WriteLine("|_________________________________________________________________|");
+                    Console.Write("| Choose:  ");
                     int opinion = int.Parse(Console.ReadLine());
                     switch(opinion)
                     {
                         case 1:
-                        double n1, n2, result;
-                        Console.WriteLine("Spänning uträknare");
+                        double n1, n2, resultSpänn;
+                        Console.WriteLine("| Spänning uträknare");
                         Console.WriteLine("|__________________________________________________________________");
-                        Console.WriteLine("Ange: Strömmen: ");
+                        Console.Write("| Ange: Strömmen: ");
                         n1 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Ange: Resistans: ");
+                        Console.Write("| Ange: Resistans: ");
                         n2 = Convert.ToInt32(Console.ReadLine());
-                        result = n1 * n2;
-                        Console.WriteLine("{0} Är spänningen. ",result);
+                        resultSpänn = n1 * n2;
+                        Console.WriteLine("| {0} Är spänningen. ",resultSpänn);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
 
                         case 2:
-                        double resultStröm, n3, n4;
-                        Console.WriteLine("Ström uträknare");
+                        double n3, n4, resultStröm;
+                        Console.WriteLine("| Ström uträknare");
                         Console.WriteLine("|__________________________________________________________________");
-                        Console.Write("Ange: spänningen: ");
+                        Console.Write("| Ange: spänningen: ");
                         n3 = Convert.ToInt32(Console.ReadLine());
                         Console.Write("Ange: Resistans: ");
                         n4 = Convert.ToInt32(Console.ReadLine());
                         resultStröm = n3 / n4;
-                        Console.WriteLine("{0} Är Strömmen. ", resultStröm);
+                        Console.WriteLine("| {0} Är Strömmen. ", resultStröm);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
 
@@ -79,31 +82,32 @@ namespace Group4
                     Console.WriteLine("| 2 = Hastighet                                                    |");
                     Console.WriteLine("| 3 = Tiden                                                        |");
                     Console.WriteLine("|__________________________________________________________________|");
+                    Console.Write("| Choose:  ");
                     int opinionSVT = int.Parse(Console.ReadLine());
                     switch (opinionSVT)
                     {
                         case 1:
                         double n1, n2, result;
-                        Console.WriteLine("Räkna ut sträckan");
+                        Console.WriteLine("| Räkna ut sträckan");
                         Console.WriteLine("|__________________________________________________________________");
-                        Console.WriteLine("Ange: Hastighet: ");
+                        Console.WriteLine("| Ange: Hastighet: ");
                         n1 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Ange: Tiden: ");
+                        Console.WriteLine("| Ange: Tiden: ");
                         n2 = Convert.ToInt32(Console.ReadLine());
                         result = n1 * n2;
-                        Console.WriteLine("{0} Är sträckan. ", result);
+                        Console.WriteLine("| {0} Är sträckan. ", result);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
 
                         case 2:
-                        Console.WriteLine("Räkna ut Hastigheten");
+                        Console.WriteLine("| Räkna ut Hastigheten");
                         Console.WriteLine("|__________________________________________________________________");
-                        Console.WriteLine("Ange: Sträckan: ");
+                        Console.Write("| Ange: Sträckan: ");
                         n1 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Ange: Tiden: ");
+                        Console.Write("| Ange: Tiden: ");
                         n2 = Convert.ToInt32(Console.ReadLine());
                         result = n1 / n2;
-                        Console.WriteLine("{0} Är Hastigheten. ", result);
+                        Console.WriteLine("| {0} Är Hastigheten. ", result);
                         Console.WriteLine("|__________________________________________________________________");
                         break;
                         
@@ -128,7 +132,7 @@ namespace Group4
                 }
 
 
-            Console.Write("- Restart (Y/N) answer: ");
+            Console.Write("| Restart (Y/N) answer: ");
             char b = char.Parse(Console.ReadLine());
             if (b =='y')
             {
