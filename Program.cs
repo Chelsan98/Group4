@@ -75,7 +75,7 @@ namespace Group4
 
                     Console.WriteLine(" ___________________________________________________________________");
                     Console.WriteLine("| Grader");
-                    Console.WriteLine("| 1 Celius");
+                    Console.WriteLine("| 1 Celsius");
                     Console.WriteLine("| 2 Fharen");
                     Console.WriteLine("| 3 Kelvin");
                     Console.WriteLine("|___________________________________________________________________");
@@ -85,7 +85,7 @@ namespace Group4
                     {
                         case 1:
                         Console.WriteLine("| Celius");
-                        Console.Write("| Ange: Antal Celius: ");
+                        Console.Write("| Ange: Antal Celsius: ");
                         int celsius = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("| Kelvin = {0}", celsius + 273);
                         Console.WriteLine("| Fahrenheit = {0}", celsius * 18 / 10 + 32);
@@ -96,14 +96,14 @@ namespace Group4
                         Console.Write("| Ange: Antal Fahrenheit: ");
                         int fahren = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("| Kelvin = {0}", fahren - 32 * 5 / 9 + 273.15);
-                        Console.WriteLine("| Celius = {0}", fahren * 1.8 + 32);
+                        Console.WriteLine("| Celsius = {0}", fahren * 1.8 + 32);
                         break;
                         
                         case 3:
-                        Console.WriteLine("| Klevin");
+                        Console.WriteLine("| Kelvin");
                         Console.Write("| Ange: Antal Kelvin: ");
                         int kelvin = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("| Celius = {0}", kelvin - 273.15);
+                        Console.WriteLine("| Celsius = {0}", kelvin - 273.15);
                         Console.WriteLine("| Fahrenheit = {0}", (kelvin - 273.15) * 1.8 + 32 );
                         break;
 
@@ -166,23 +166,69 @@ namespace Group4
                 if (x == 'D')
                 {
                     Console.WriteLine("Area eller volym");
-                    char k = char.Parse(Console.ReadLine());
-                    if (x == 'k'){
+                    Console.WriteLine("Skriv 1 för area eller 2 för volym");
                     int opinionArea = int.Parse(Console.ReadLine());
                     switch (opinionArea){
+                            case 1:
+                                Console.WriteLine("Välj mellan Rektangel, triangel, cirkel, kub, pyramid eller sfär");
+                                Console.WriteLine("Skriv r, t, c, k, p eller s för respektive form");
+                                char a = char.Parse(Console.ReadLine());
+                               
+                            if (a == 'r')
+                                     { 
+                                    Console.WriteLine("Räkna ut arean på en rektangel = b*h");
+                                    Console.ReadLine();
+                                
+                                    }
 
+                            if (a == 't')
+                                {
+                                    Console.WriteLine("Räkna ut arean på en triangel = b*h/2");
+                                    Console.ReadLine(); 
+                                }
+                          
+                            if (a == 'c')
+                                {
+                                    Console.WriteLine("Räkna ut arean på en cirkel = ");
+                                    Console.ReadLine();
+                            }
 
+                            if (a == 'k')
+                            {
+                                Console.WriteLine("Räkna ut arean på en kub = ");
+                                Console.ReadLine();
+                            }
+
+                            if (a == 'p')
+                            {
+                                Console.WriteLine("Räkna ut arean på en pyramid = ");
+                                Console.ReadLine();
+                            }
+
+                            if (a == 's')
+                            {
+                                Console.WriteLine("Räkna ut arean på en sfär = ");
+                                Console.ReadLine();
+                            }
+                            else { Console.WriteLine("Du skrev ett ogiltigt värde"); 
+                            }
+                            break;
+
+                           
+                                   
+            
+                           
                     }
                     } 
 
-                    if (x == 'v'){
+                    if (x == 'V'){
                     int opinionVolym = int.Parse(Console.ReadLine());
                     switch (opinionVolym){
 
                         
                     }
                     }
-                }
+                
                 // -----------------------------------------------------------------------------------------------
 
             Console.Write("| Restart (Y/N) answer: ");
