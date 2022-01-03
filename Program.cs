@@ -23,8 +23,8 @@ namespace Group4
             Console.WriteLine("| A = Ohms Lag                                                   |");
             Console.WriteLine("| B = Grader                                                     |");
             Console.WriteLine("| C = Hastighet                                                  |");
-            Console.WriteLine("| M = inches / cm / feet / yards / m                             |");
             Console.WriteLine("| D = Area eller volym                                           |");
+            Console.WriteLine("| M = inches / cm / feet / yards / m                             |");
             Console.WriteLine("|________________________________________________________________|");
             Console.Write("| Choose:  ");
                 char x = char.Parse(Console.ReadLine());
@@ -176,6 +176,118 @@ namespace Group4
                         break;
                     }
                 }
+             
+                if (x == 'D')
+                {
+                    Console.WriteLine("Area eller volym");
+                    Console.WriteLine("Skriv 1 för area eller 2 för volym");
+                    int opinionAreaVolym = int.Parse(Console.ReadLine());
+
+                    if (opinionAreaVolym == 1)
+                    Console.WriteLine("Räkna ut area");
+                    Console.WriteLine("Välj mellan Rektangel, triangel, cirkel, kub, pyramid eller sfär");
+                    Console.WriteLine("Skriv r, t, c, k, p eller s för respektive form");
+                    char a = char.Parse(Console.ReadLine());
+
+                    if (a == 'r')
+                    {
+
+                        Console.WriteLine("Räkna ut arean på en rektangel = b*h");
+                        Console.WriteLine("Skriv basen på rektangeln");
+                        double rekB = double.Parse(Console.ReadLine());
+                        Console.WriteLine("Skriv höjden på rektangeln");
+                        double rekH = double.Parse(Console.ReadLine());
+                        double rekA = rekB * rekH;
+                        Console.WriteLine("Area= " + rekA);
+
+                    }
+
+                  else if (a == 't')
+                    {
+                        Console.WriteLine("Räkna ut arean på en triangel = b*h/2");
+                        Console.WriteLine("Skriv basen på trianglen");
+                        double triB= double.Parse(Console.ReadLine());
+                    }
+
+                   else if (a == 'c')
+                    {
+                        Console.WriteLine("Räkna ut arean på en cirkel = pi* r*r ");
+                        Console.ReadLine();
+                    }
+
+                  else if (a == 'k')
+                    {
+                        Console.WriteLine("Räkna ut arean på en kub = 6 s*s för totala arean");
+                        Console.ReadLine();
+                    }
+
+                   else if (a == 'p')
+                    {
+                        Console.WriteLine("Räkna ut arean på en pyramid = jäkligt krångligt kollar på det sen ");
+                        Console.ReadLine();
+                    }
+
+                   else if (a == 's')
+                    {
+                        Console.WriteLine("Räkna ut arean på en sfär = 4pir*r ");
+                        Console.ReadLine();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Du skrev ett ogiltigt värde");
+                    }
+
+
+                    if (opinionAreaVolym ==2)
+                    {
+                        Console.WriteLine("Räkna ut volym");
+                        Console.WriteLine("Välj mellan Rektangel, triangel, cirkel, kub, pyramid eller sfär");
+                        Console.WriteLine("Skriv r, t, c, k, p eller s för respektive form");
+                        char v = char.Parse(Console.ReadLine());
+                        if (v == 'r')
+                        {
+
+                            Console.WriteLine("Räkna ut Volymen på en rektangel =");
+                           
+                        }
+                        else if (a == 't')
+                        {
+                            Console.WriteLine("Räkna ut Volymen på en triangel = ");
+                            
+                        }
+
+                        else if (a == 'c')
+                        {
+                            Console.WriteLine("Räkna ut Volymen på en cirkel =  ");
+                            Console.ReadLine();
+                        }
+
+                        else if (a == 'k')
+                        {
+                            Console.WriteLine("Räkna ut Volymen på en kub = ");
+                            Console.ReadLine();
+                        }
+
+                        else if (a == 'p')
+                        {
+                            Console.WriteLine("Räkna ut Volymen på en pyramid = ");
+                            Console.ReadLine();
+                        }
+
+                        else if (a == 's')
+                        {
+                            Console.WriteLine("Räkna ut Volymen på en sfär = ");
+                            Console.ReadLine();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Du skrev ett ogiltigt värde");
+                        }
+
+
+                    }
+
+                }
                 // -----------------------------------------------------------------------------------------------
                 // skriv in 1 få ut 4 känns budget
                 // ideal: användaren väljer x till y värde  istället för 1:4
@@ -219,71 +331,10 @@ namespace Group4
                     }
 
                 // -----------------------------------------------------------------------------------------------
-                if (x == 'D')
-                {
-                    Console.WriteLine("Area eller volym");
-                    Console.WriteLine("Skriv 1 för area eller 2 för volym");
-                    int opinionArea = int.Parse(Console.ReadLine());
-                    switch (opinionArea){
-                            case 1:
-                                Console.WriteLine("Välj mellan Rektangel, triangel, cirkel, kub, pyramid eller sfär");
-                                Console.WriteLine("Skriv r, t, c, k, p eller s för respektive form");
-                                char a = char.Parse(Console.ReadLine());
-                               
-                            if (a == 'r')
-                                     { 
-                                    Console.WriteLine("Räkna ut arean på en rektangel = b*h");
-                                    Console.ReadLine();
-                                
-                                    }
+              
+                 
 
-                            if (a == 't')
-                                {
-                                    Console.WriteLine("Räkna ut arean på en triangel = b*h/2");
-                                    Console.ReadLine(); 
-                                }
-                          
-                            if (a == 'c')
-                                {
-                                    Console.WriteLine("Räkna ut arean på en cirkel = ");
-                                    Console.ReadLine();
-                            }
-
-                            if (a == 'k')
-                            {
-                                Console.WriteLine("Räkna ut arean på en kub = ");
-                                Console.ReadLine();
-                            }
-
-                            if (a == 'p')
-                            {
-                                Console.WriteLine("Räkna ut arean på en pyramid = ");
-                                Console.ReadLine();
-                            }
-
-                            if (a == 's')
-                            {
-                                Console.WriteLine("Räkna ut arean på en sfär = ");
-                                Console.ReadLine();
-                            }
-                            else { Console.WriteLine("Du skrev ett ogiltigt värde"); 
-                            }
-                            break;
-
-                           
-                                   
-            
-                           
-                    }
-                    } 
-
-                    if (x == 'V'){
-                    int opinionVolym = int.Parse(Console.ReadLine());
-                    switch (opinionVolym){
-
-                        
-                    }
-                    }
+                 
                 
                 // -----------------------------------------------------------------------------------------------
 
