@@ -7,19 +7,30 @@ namespace Group4
         static void Main(string[] args){
         bool finished = false;
         do
+        // använda variabler:
+        // A, B, C, D = Menu
+        // R, T, C, K, P, S = Area & Volym
+        // y = return
+        // M = inches / cm / feet / yards / m [TEMPORÄR]
+        // 1, 2, 3, = Switch: Ohms Lag.
+        // 1, 2, 3, = Switch: Grader.
+        // 1, 2, 3, = Switch: Hastighet.
+        // ------------------------------
+        // Kan man göra A & AA = New varible eller A & a
         {
-            Console.WriteLine("_________________________________________________________________");
+            Console.WriteLine("__________________________________________________________________");
             Console.WriteLine("|-------------------------------Start----------------------------|");                           
             Console.WriteLine("| A = Ohms Lag                                                   |");
             Console.WriteLine("| B = Grader                                                     |");
             Console.WriteLine("| C = Hastighet                                                  |");
+            Console.WriteLine("| M = inches / cm / feet / yards / m                             |");
             Console.WriteLine("| D = Area eller volym                                           |");
             Console.WriteLine("|________________________________________________________________|");
             Console.Write("| Choose:  ");
                 char x = char.Parse(Console.ReadLine());
                 if (x == 'A')
                 {
-                    Console.WriteLine("__________________________________________________________________");
+                    Console.WriteLine("___________________________________________________________________");
                     Console.WriteLine("|--------------------------Ohms Lag Menu--------------------------|");
                     Console.WriteLine("| 1 = Spänning                                                    |");
                     Console.WriteLine("| 2 = Ström                                                       |");
@@ -89,6 +100,7 @@ namespace Group4
                         int celsius = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("| Kelvin = {0}", celsius + 273);
                         Console.WriteLine("| Fahrenheit = {0}", celsius * 18 / 10 + 32);
+                        Console.WriteLine("|___________________________________________________________________");
                         break;
 
                         case 2:
@@ -97,6 +109,7 @@ namespace Group4
                         int fahren = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("| Kelvin = {0}", fahren - 32 * 5 / 9 + 273.15);
                         Console.WriteLine("| Celsius = {0}", fahren * 1.8 + 32);
+                        Console.WriteLine("|___________________________________________________________________");
                         break;
                         
                         case 3:
@@ -105,6 +118,7 @@ namespace Group4
                         int kelvin = Convert.ToInt32(Console.ReadLine());
                         Console.WriteLine("| Celsius = {0}", kelvin - 273.15);
                         Console.WriteLine("| Fahrenheit = {0}", (kelvin - 273.15) * 1.8 + 32 );
+                        Console.WriteLine("|___________________________________________________________________");
                         break;
 
                     }
@@ -162,6 +176,48 @@ namespace Group4
                         break;
                     }
                 }
+                // -----------------------------------------------------------------------------------------------
+                // skriv in 1 få ut 4 känns budget
+                // ideal: användaren väljer x till y värde  istället för 1:4
+                if (x == 'M')
+                    Console.WriteLine("_____________________________________________________________________");
+                    Console.WriteLine("| Välj mellan | inches | cm | feet | yards | m |                    |"); 
+                    Console.WriteLine("| 1) Inches                                                         |");
+                    Console.WriteLine("| 2) Cm                                                             |");
+                    Console.WriteLine("| 3) Feet                                                           |");
+                    Console.WriteLine("| 4) Yards                                                          |");
+                    Console.WriteLine("| 5) Meter                                                          |");
+                    Console.WriteLine("|___________________________________________________________________|");
+                    Console.Write("| Choose:  ");
+                    int opinionMesure = int.Parse(Console.ReadLine());
+                    switch (opinionMesure){
+                        case 1:
+                        // FUNGERAR MEN, INTE DOUBLE TO INT
+                        double inches;
+                        int inches2;
+                        Console.Write("| Skriv in: Antal Inches: ");
+                        inches = Convert.ToDouble(Console.ReadLine());
+                        inches2 = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("| CM = {0}",inches * 2.54);
+                        Console.WriteLine("| Feet = {0}", inches / 12);
+                        Console.WriteLine("| Yards = {0}",inches / 36);
+                        Console.WriteLine("| Meters = {0}", inches / 39.37);
+                        Console.WriteLine("|___________________________________________________________________");
+                        break;
+
+                        case 2:
+                        break;
+
+                        case 3:
+                        break;
+
+                        case 4:
+                        break;
+
+                        case 5:
+                        break;
+                    }
+
                 // -----------------------------------------------------------------------------------------------
                 if (x == 'D')
                 {
