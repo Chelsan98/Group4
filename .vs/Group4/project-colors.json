@@ -15,7 +15,12 @@
       "ProjectGuid": "ae652af7-e735-4b3a-9855-35cf061e01a0",
       "DisplayName": "Group4",
       "ColorIndex": 2
+    },
+    "1156823f-6242-4c1f-8cb6-f05138193897": {
+      "ProjectGuid": "1156823f-6242-4c1f-8cb6-f05138193897",
+      "DisplayName": "Group4",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

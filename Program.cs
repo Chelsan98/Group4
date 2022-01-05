@@ -2,10 +2,13 @@
 
 namespace Group4
 {
+
     class Program
     {
+      
         static void Main(string[] args){
         bool finished = false;
+
         do
         // använda variabler:
         // A, B, C, D = Menu
@@ -185,6 +188,7 @@ namespace Group4
 
                     if (opinionAreaVolym == 1)
                     Console.WriteLine("Räkna ut area");
+                    Console.WriteLine("________________________________________________________________________");
                     Console.WriteLine("Välj mellan Rektangel, triangel, cirkel, kub, pyramid eller sfär");
                     Console.WriteLine("Skriv r, t, c, k, p eller s för respektive form");
                     char a = char.Parse(Console.ReadLine());
@@ -204,15 +208,23 @@ namespace Group4
 
                   else if (a == 't')
                     {
+                        // /2 funkar inte av någon anledning //
                         Console.WriteLine("Räkna ut arean på en triangel = b*h/2");
                         Console.WriteLine("Skriv basen på trianglen");
                         double triB= double.Parse(Console.ReadLine());
+                        Console.WriteLine("Skriv höjden på trianglen");
+                        double triH = double.Parse(Console.ReadLine());
+                        double triA = triB * triH / 2;
+                        Console.WriteLine("Arean på triangeln är: "+triA);
                     }
 
                    else if (a == 'c')
                     {
+                        double pi = 3.14;
                         Console.WriteLine("Räkna ut arean på en cirkel = pi* r*r ");
-                        Console.ReadLine();
+                        Console.WriteLine("Skriv radien på cirklen");
+                        double cirR =double.Parse(Console.ReadLine());
+                        Console.WriteLine("Arean på cirklen är: "+pi *cirR *cirR);
                     }
 
                   else if (a == 'k')
@@ -229,8 +241,13 @@ namespace Group4
 
                    else if (a == 's')
                     {
+                        double pi = 3.14;
                         Console.WriteLine("Räkna ut arean på en sfär = 4pir*r ");
-                        Console.ReadLine();
+                        Console.WriteLine("__________________________________________");
+                        Console.WriteLine("Skriv radien på sfären");
+                        double sfärR=double.Parse (Console.ReadLine());
+                        Console.WriteLine("Arean på sfären är: "+ 4*pi *sfärR * sfärR);
+
                     }
                     else
                     {
@@ -238,28 +255,41 @@ namespace Group4
                     }
 
 
-                    if (opinionAreaVolym ==2)
+                    if (opinionAreaVolym == 2)
                     {
                         Console.WriteLine("Räkna ut volym");
-                        Console.WriteLine("Välj mellan Rektangel, triangel, cirkel, kub, pyramid eller sfär");
-                        Console.WriteLine("Skriv r, t, c, k, p eller s för respektive form");
+                        Console.WriteLine("Välj mellan Rektangel/Rätblock, prisma, cylinder, kub, pyramid eller sfär");
+                        Console.WriteLine("Skriv r, p, c, k, p eller s för respektive form");
                         char v = char.Parse(Console.ReadLine());
                         if (v == 'r')
                         {
 
-                            Console.WriteLine("Räkna ut Volymen på en rektangel =");
+                            Console.WriteLine("Räkna ut Volymen på en rektangel/rätblock = basytan (längden*bredden) * höjden");
+                            Console.WriteLine("Skriv basytan");
+                            double rekbasyta=double.Parse(Console.ReadLine());
+                            Console.WriteLine("Skriv höjden");
+                            double rekhöjd =double.Parse(Console.ReadLine());
+                            Console.WriteLine("Volymen är: "+ rekbasyta *rekhöjd);
                            
                         }
-                        else if (a == 't')
+                        else if (a == 'p')
                         {
-                            Console.WriteLine("Räkna ut Volymen på en triangel = ");
-                            
+                            Console.WriteLine("Räkna ut Volymen på en prisma = basyta * höjd");
+                            Console.WriteLine("Skriv basytan");
+                            double prismaB = double.Parse(Console.ReadLine());
+                            Console.WriteLine("Skriv höjden");
+                            double prismaH = double.Parse(Console.ReadLine());
+                            Console.WriteLine("Svaret är: "+ prismaB *prismaH);
                         }
 
                         else if (a == 'c')
                         {
-                            Console.WriteLine("Räkna ut Volymen på en cirkel =  ");
-                            Console.ReadLine();
+                            Console.WriteLine("Räkna ut Volymen på en cylinder = basytan(pi*r*r) * höjden");
+                            Console.WriteLine("Skriv basytan");
+                            double cylinderB = double.Parse(Console.ReadLine());
+                            Console.WriteLine("Skriv höjden");
+                            double cylinderH = double.Parse(Console.ReadLine());
+                            Console.WriteLine("Svaret är: " + cylinderB * cylinderH);
                         }
 
                         else if (a == 'k')
