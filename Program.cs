@@ -304,29 +304,50 @@ namespace Group4
                     int opinionMesure = int.Parse(Console.ReadLine());
                     switch (opinionMesure){
                         case 1:
-                        // FUNGERAR MEN, INTE DOUBLE TO INT
                         double inches;
-                        int inches2;
                         Console.Write("| Skriv in: Antal Inches: ");
                         inches = Convert.ToDouble(Console.ReadLine());
-                        inches2 = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("| CM = {0}",inches * 2.54);
+                        Console.WriteLine("| CM = {0}", inches * 2.54);
                         Console.WriteLine("| Feet = {0}", inches / 12);
-                        Console.WriteLine("| Yards = {0}",inches / 36);
+                        Console.WriteLine("| Yards = {0}", inches / 36);
                         Console.WriteLine("| Meters = {0}", inches / 39.37);
                         Console.WriteLine("|___________________________________________________________________");
                         break;
 
                         case 2:
+                        double cm;
+                        Console.Write("| Skriv in: Antal Inches: ");
+                        cm = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("| Inches = {0}", cm * 2.54);
+                        Console.WriteLine("| Feet = {0}", cm / 12);
+                        Console.WriteLine("| Yards = {0}", cm / 36);
+                        Console.WriteLine("| Meters = {0}", cm / 39.37);
+                        Console.WriteLine("|___________________________________________________________________");
                         break;
 
                         case 3:
+                        double feet;
+                        feet = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("| Inches = {0}", feet * 2.54);
+                        Console.WriteLine("| CM = {0}", feet / 12);
+                        Console.WriteLine("| Yards = {0}", feet / 36);
+                        Console.WriteLine("| Meters = {0}", feet / 39.37);
+                        Console.WriteLine("|___________________________________________________________________");
                         break;
 
                         case 4:
+                        double yards;
+                        yards = Convert.ToDouble(Console.ReadLine());
+                        Console.WriteLine("| Inches = {0}", yards * 2.54);
+                        Console.WriteLine("| CM = {0}", yards / 12);
+                        Console.WriteLine("| Yards = {0}", yards / 36);
+                        Console.WriteLine("| Meters = {0}", yards / 39.37);
+                        Console.WriteLine("|___________________________________________________________________");
                         break;
 
                         case 5:
+                        double m;
+                        m = Convert.ToDouble(Console.ReadLine());
                         break;
                     }
 
