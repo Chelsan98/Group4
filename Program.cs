@@ -1,17 +1,16 @@
 ﻿using System;
-
 namespace Group4
 {
-
     class Program
     {
-      
         static void Main(string[] args){
         bool finished = false;
         do
         {
             Console.WriteLine("__________________________________________________________________");
-            Console.WriteLine("|-------------------------------Start----------------------------|");                           
+            Console.WriteLine("|                          Main menu                             |");
+            Console.WriteLine("|                  Välj mellan Alternativen                      |");
+            Console.WriteLine("|________________________________________________________________|");                         
             Console.WriteLine("| A = Ohms Lag                                                   |");
             Console.WriteLine("| B = Grader                                                     |");
             Console.WriteLine("| C = Hastighet                                                  |");
@@ -79,11 +78,13 @@ namespace Group4
                 {
 
                     Console.WriteLine(" ___________________________________________________________________");
-                    Console.WriteLine("| Grader");
-                    Console.WriteLine("| 1 Celsius");
-                    Console.WriteLine("| 2 Fharen");
-                    Console.WriteLine("| 3 Kelvin");
-                    Console.WriteLine("|___________________________________________________________________");
+                    Console.WriteLine("|                              Grader                               |");
+                    Console.WriteLine("|         Välj det värdet du har så räknas resterande värden ut     |");
+                    Console.WriteLine("|___________________________________________________________________|");
+                    Console.WriteLine("| 1) Celsius                                                        |");
+                    Console.WriteLine("| 2) Fharen                                                         |");
+                    Console.WriteLine("| 3) Kelvin                                                         |");
+                    Console.WriteLine("|___________________________________________________________________|");
                     Console.Write("| Choose:  ");
                     int opinionGrade = int.Parse(Console.ReadLine());
                     switch (opinionGrade)
@@ -178,7 +179,7 @@ namespace Group4
                 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
                 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
              
-                if (x == 'D' || x == 'd')
+                if (x == 'd' || x == 'D')
                 {
                     Console.WriteLine("__________________________________________________________________");
                     Console.WriteLine("|                      Area eller volym                           |");
@@ -210,8 +211,8 @@ namespace Group4
                         Console.Write("| Ange höjden på rektangeln: ");
                         double rekH = double.Parse(Console.ReadLine());
                         double rekA = rekB * rekH;
-                        Console.WriteLine("| Arean på Rektangel: " + rekA);
-                        Console.WriteLine("|_________________________________________________________________|");
+                        Console.WriteLine("| Arean på Rektangel: "+ rekA);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (a == 't' || a == 'T')
                     {
@@ -222,9 +223,9 @@ namespace Group4
                         double triH = double.Parse(Console.ReadLine());
                         double triA = (triB * triH) / 2;
                         Console.WriteLine("| Arean på triangeln är: "+ triA);
-                        Console.WriteLine("|_________________________________________________________________|");
+                        Console.WriteLine("|_________________________________________________________________");
                     }
-                    else if (a == 'p')
+                    else if (a == 'p'|| a == 'P')
                     {
                         // b upphöjt till 2 + 4 (en halv gånger b gånger h)
                         Console.WriteLine("| Räkna ut surface-arean på en pyramid. ");
@@ -238,16 +239,16 @@ namespace Group4
                         + (BaseL * Math.Sqrt(Math.Pow(BaseW / 2, 2) + Math.Pow(Height, 2))) 
                         + (BaseW * Math.Sqrt(Math.Pow(BaseL / 2, 2) + Math.Pow(Height, 2)));
                         Console.WriteLine("| Arean på surface-arean är: "+ resultPyramidArea);
-                        
+                        Console.WriteLine("|_________________________________________________________________");
                     }
-                     else if (a == 's')
+                     else if (a == 's' || a == 'S')
                     {
                         double pi = 3.14;
-                        Console.WriteLine("Räkna ut arean på en sfär.");
-                        Console.Write("Skriv radien på sfären: ");
-                        double sfärR=double.Parse (Console.ReadLine());
-                        Console.WriteLine("Arean på sfären är: "+ 4*pi *sfärR * sfärR);
-
+                        Console.WriteLine("| Räkna ut arean på en sfär.");
+                        Console.Write("| Skriv radien på sfären: ");
+                        double sfärR = double.Parse (Console.ReadLine());
+                        Console.WriteLine("| Arean på sfären är: "+ 4 * pi * sfärR * sfärR);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (a == 'k' || a == 'K')
                     {
@@ -273,35 +274,42 @@ namespace Group4
                     char m = char.Parse(Console.ReadLine());
                     if (m == 'r' || m == 'R')
                     {
-                        Console.WriteLine("Räkna ut Volymen på en rektangel/rätblock.");
-                        Console.Write("Ange basytan: ");
-                        double rekbasyta=double.Parse(Console.ReadLine());
-                        Console.Write("Ange höjden: ");
-                        double rekhöjd =double.Parse(Console.ReadLine());
-                        Console.WriteLine("Volymen är: "+ rekbasyta *rekhöjd);
+                        Console.WriteLine("| Räkna ut Volymen på en rektangel/rätblock.");
+                        Console.Write("| Ange basytan: ");
+                        double rekBase = double.Parse(Console.ReadLine());
+                        Console.Write("| Ange höjden: ");
+                        double rekHeight = double.Parse(Console.ReadLine());
+                        Console.WriteLine("| Volymen är: "+ rekBase * rekHeight);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (m == 'p' || m == 'P')
                     {
-                         Console.WriteLine("Räkna ut Volymen på en prisma = basyta * höjd");
-                        Console.Write("Ange basytan: ");
+                         Console.WriteLine("| Räkna ut Volymen på en prisma.");
+                        Console.Write("| Ange basytan: ");
                         double prismaB = double.Parse(Console.ReadLine());
-                        Console.Write("Ange höjden: ");
+                        Console.Write("| Ange höjden: ");
                         double prismaH = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Svaret är: "+ prismaB *prismaH);
+                        Console.WriteLine("| Volymen på prisma är: "+ prismaB * prismaH);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (m == 'c' || m == 'C')
                     {
-                        Console.WriteLine("Räkna ut Volymen på en cylinder = basytan(pi*r*r) * höjden");
-                        Console.WriteLine("Skriv basytan");
+                        Console.WriteLine("| Räkna ut Volymen på en cylinder.");
+                        Console.WriteLine("| Ange basytan");
                         double cylinderB = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Skriv höjden");
+                        Console.WriteLine("| Ange höjden");
                         double cylinderH = double.Parse(Console.ReadLine());
-                        Console.WriteLine("Svaret är: " + cylinderB * cylinderH);
+                        Console.WriteLine("| Volymen på cylindern är: " + cylinderB * cylinderH);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (m == 'k' || m == 'K')
                     {
-                        Console.WriteLine("Räkna ut Volymen på en kub = ");
-                        Console.ReadLine();
+                        Console.WriteLine("| Räkna ut Volymen på en kub. ");
+                        Console.Write("| Ange Base/Lengh: ");
+                        double CubeV = double.Parse(Console.ReadLine());
+                        double CubeResult = CubeV * 3;
+                        Console.WriteLine("| Volymen på kuben är: " + CubeResult);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (m == 'p' || m == 'P')
                     {
@@ -311,10 +319,10 @@ namespace Group4
                         Console.Write("| Ange Base Width: ");
                         double BaseW = double.Parse(Console.ReadLine());
                         Console.Write("| Ange Pyramid Height: ");
-                        double Height = double.Parse(Console.ReadLine());
-                        double resultPyramidArea = (BaseL * BaseW) 
-                        + (BaseL * Math.Sqrt(Math.Pow(BaseW / 2, 2) + Math.Pow(Height, 2))) 
-                        + (BaseW * Math.Sqrt(Math.Pow(BaseL / 2, 2) + Math.Pow(Height, 2)));
+                        double HeightH = double.Parse(Console.ReadLine());
+                        double resultPyramidVolym = ((BaseL * BaseW * HeightH) / 3);
+                        Console.WriteLine("| Volymen på pyramid är: " + resultPyramidVolym);
+                        Console.WriteLine("|_________________________________________________________________");
                     }
                     else
                     {
@@ -332,7 +340,7 @@ namespace Group4
                 // @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 
-                if (x == 'M')
+                if (x == 'M' || x == 'm')
                 {
                     Console.WriteLine("_____________________________________________________________________");
                     Console.WriteLine("| Välj mellan | inches | cm | feet | yards | m |                    |");
@@ -346,6 +354,7 @@ namespace Group4
                     Console.Write("| Choose:  ");
                     int opinionMesure = int.Parse(Console.ReadLine());
                     switch (opinionMesure){
+
                         case 1:
                         double inches;
                         Console.Write("| Skriv in: Antal Inches: ");
@@ -402,7 +411,8 @@ namespace Group4
 
             Console.Write("| Restart (Y/N) answer: ");
             char b = char.Parse(Console.ReadLine());
-            if (b =='y')
+            Console.WriteLine("|_________________________________________________________________");
+            if (b =='y' || b == 'Y')
             {
                 finished = false;
             }
