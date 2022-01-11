@@ -9,7 +9,7 @@ namespace Group4
         {
             Console.WriteLine("__________________________________________________________________");
             Console.WriteLine("|                          Main menu                             |");
-            Console.WriteLine("|                  Välj mellan Alternativen                      |");
+            Console.WriteLine("|                   Välj mellan Alternativen                     |");
             Console.WriteLine("|________________________________________________________________|");                         
             Console.WriteLine("| A = Ohms Lag                                                   |");
             Console.WriteLine("| B = Grader                                                     |");
@@ -92,7 +92,7 @@ namespace Group4
                         case 1:
                         Console.WriteLine("| Celius");
                         Console.Write("| Ange: Antal Celsius: ");
-                        int celsius = Convert.ToInt32(Console.ReadLine());
+                        double celsius = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Kelvin = {0}", celsius + 273);
                         Console.WriteLine("| Fahrenheit = {0}", celsius * 18 / 10 + 32);
                         Console.WriteLine("|___________________________________________________________________");
@@ -101,7 +101,7 @@ namespace Group4
                         case 2:
                         Console.WriteLine("| Fahrenheit");
                         Console.Write("| Ange: Antal Fahrenheit: ");
-                        int fahren = Convert.ToInt32(Console.ReadLine());
+                        double fahren = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Kelvin = {0}", fahren - 32 * 5 / 9 + 273.15);
                         Console.WriteLine("| Celsius = {0}", fahren * 1.8 + 32);
                         Console.WriteLine("|___________________________________________________________________");
@@ -110,7 +110,7 @@ namespace Group4
                         case 3:
                         Console.WriteLine("| Kelvin");
                         Console.Write("| Ange: Antal Kelvin: ");
-                        int kelvin = Convert.ToInt32(Console.ReadLine());
+                        double kelvin = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Celsius = {0}", kelvin - 273.15);
                         Console.WriteLine("| Fahrenheit = {0}", (kelvin - 273.15) * 1.8 + 32 );
                         Console.WriteLine("|___________________________________________________________________");
@@ -211,7 +211,7 @@ namespace Group4
                         Console.Write("| Ange höjden på rektangeln: ");
                         double rekH = double.Parse(Console.ReadLine());
                         double rekA = rekB * rekH;
-                        Console.WriteLine("| Arean på Rektangel: "+ rekA);
+                        Console.WriteLine("| Arean på Rektangeln är: "+ rekA);
                         Console.WriteLine("|_________________________________________________________________");
                     }
                     else if (a == 't' || a == 'T')
@@ -252,14 +252,20 @@ namespace Group4
                     }
                     else if (a == 'k' || a == 'K')
                     {
-                        Console.WriteLine("kuben");
-                        
+                        Console.WriteLine("räkna ut basytans area på en kub");
+                        Console.Write("| Skriv längden på kuben: ");
+                        double kubl = double.Parse(Console.ReadLine());
+                        Console.Write("| Skriv bredden på kuben: ");
+                        double kubb = double.Parse(Console.ReadLine());
+                        Console.WriteLine("| basytans area på kuben är: " + kubl * kubb);
                     }
                     else
                     {
                         Console.WriteLine("Du skrev ett ogiltigt värde");
                     }
                     break;
+
+
                     case 2:
                     Console.WriteLine("__________________________________________________________________");
                     Console.WriteLine("|                              Volym                              |");
@@ -284,7 +290,7 @@ namespace Group4
                     }
                     else if (m == 'p' || m == 'P')
                     {
-                         Console.WriteLine("| Räkna ut Volymen på en prisma.");
+                        Console.WriteLine("| Räkna ut Volymen på en prisma.");
                         Console.Write("| Ange basytan: ");
                         double prismaB = double.Parse(Console.ReadLine());
                         Console.Write("| Ange höjden: ");
@@ -368,7 +374,7 @@ namespace Group4
 
                         case 2:
                         double cm;
-                        Console.Write("| Skriv in: Antal Inches: ");
+                        Console.Write("| Skriv in: Antal cm: ");
                         cm = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Inches = {0}", cm * 2.54);
                         Console.WriteLine("| Feet = {0}", cm / 12);
@@ -379,6 +385,7 @@ namespace Group4
 
                         case 3:
                         double feet;
+                        Console.Write("| Skriv in: Antal Feet: ");
                         feet = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Inches = {0}", feet * 2.54);
                         Console.WriteLine("| CM = {0}", feet / 12);
@@ -389,6 +396,7 @@ namespace Group4
 
                         case 4:
                         double yards;
+                        Console.Write("| Skriv in: Antal yards: ");
                         yards = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Inches = {0}", yards * 2.54);
                         Console.WriteLine("| CM = {0}", yards / 12);
@@ -399,6 +407,7 @@ namespace Group4
 
                         case 5:
                         double meter;
+                        Console.Write("| Skriv in: Antal meter: ");
                         meter = Convert.ToDouble(Console.ReadLine());
                         Console.WriteLine("| Inches = {0}", meter * 2.54);
                         Console.WriteLine("| CM = {0}", meter / 12);
