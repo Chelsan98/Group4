@@ -23,6 +23,7 @@ namespace Group4
                 {
                     Console.WriteLine("___________________________________________________________________");
                     Console.WriteLine("|--------------------------Ohms Lag Menu--------------------------|");
+                    Console.WriteLine("|                          Välj uträknare                          |");
                     Console.WriteLine("| 1 = Spänning                                                    |");
                     Console.WriteLine("| 2 = Ström                                                       |");
                     Console.WriteLine("| 3 = Resistans                                                   |");
@@ -124,6 +125,8 @@ namespace Group4
                 {
                     Console.WriteLine("___________________________________________________________________");
                     Console.WriteLine("|----------------------------Hastighet-----------------------------|");
+                    Console.WriteLine("|                          Välj uträknare                          |");
+                    Console.WriteLine("|                                                                  |");
                     Console.WriteLine("| 1 = Sträckan / Distans                                           |");
                     Console.WriteLine("| 2 = Hastighet                                                    |");
                     Console.WriteLine("| 3 = Tiden                                                        |");
@@ -268,7 +271,7 @@ namespace Group4
 
                     case 2:
                     Console.WriteLine("__________________________________________________________________");
-                    Console.WriteLine("|                              Volym                              |");
+                    Console.WriteLine("|                         Räkna ut  Volym                         |");
                     Console.WriteLine("| Rektangel = R & r                                               |");
                     Console.WriteLine("| Triangel..= T & t                                               |");
                     Console.WriteLine("| Pyramid...= P & p                                               |");
@@ -350,7 +353,8 @@ namespace Group4
                 {
                     Console.WriteLine("_____________________________________________________________________");
                     Console.WriteLine("| Välj mellan | inches | cm | feet | yards | m |                    |");
-                    Console.WriteLine("|___________________________________________________________________|"); 
+                    Console.WriteLine("|___________________________________________________________________|");
+                    Console.WriteLine("|               Välj det värde du vill utgå ifrån                   |");
                     Console.WriteLine("| 1) Inches                                                         |");
                     Console.WriteLine("| 2) Cm                                                             |");
                     Console.WriteLine("| 3) Feet                                                           |");

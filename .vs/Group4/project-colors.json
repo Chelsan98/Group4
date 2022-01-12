@@ -25,7 +25,12 @@
       "ProjectGuid": "ca4975ab-4d4f-4516-8b02-01a8ac803414",
       "DisplayName": "Group4",
       "ColorIndex": 4
+    },
+    "789f5259-3f89-4903-b69a-199b30e75b60": {
+      "ProjectGuid": "789f5259-3f89-4903-b69a-199b30e75b60",
+      "DisplayName": "Group4",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }
