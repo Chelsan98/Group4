@@ -23,7 +23,7 @@ namespace Group4
                 {
                     Console.WriteLine("___________________________________________________________________");
                     Console.WriteLine("|--------------------------Ohms Lag Menu--------------------------|");
-                    Console.WriteLine("|                          Välj uträknare                          |");
+                    Console.WriteLine("|                          Välj uträknare                         |");
                     Console.WriteLine("| 1 = Spänning                                                    |");
                     Console.WriteLine("| 2 = Ström                                                       |");
                     Console.WriteLine("| 3 = Resistans                                                   |");
